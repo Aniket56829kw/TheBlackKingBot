@@ -84,10 +84,10 @@ MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+https://t.me/TheBla
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
-BLACKURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '6790361664').split()]
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', ''
+BLACKURL_PRIME_USERS = [int(blackurlers) if id_pattern.search(blackurlers) else blackurlers for blackurlers in environ.get('BURL_PRIME_USERS', '6790361664').split()]
 Black_groups = environ.get('BLACK_GROUPS','')
-BLACK_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE
+BLACK_GROUPS = [int(black_groups) for black_groups in black_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE
 my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '').split()]
 MY_USERS = (my_users) if my_users else []
 
