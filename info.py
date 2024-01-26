@@ -83,8 +83,8 @@ MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+https://t.me/TheBla
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', ''
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'https://shareus.io') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'QkPZEY0lolfg6KOfgk3019OaHHk2'
 BLACKURL_PRIME_USERS = [int(blackurlers) if id_pattern.search(blackurlers) else blackurlers for blackurlers in environ.get('BURL_PRIME_USERS', '6790361664').split()]
 Black_groups = environ.get('BLACK_GROUPS','')
 BLACK_GROUPS = [int(black_groups) for black_groups in black_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE
